@@ -1,13 +1,11 @@
 package Ejercicios_Tema_6;
 
 public abstract class Poligono {
-	double lado1, lado2, lado3, lado4;
-	int nlados;
-	Poligono(double l1, double l2, double l3, int nlados) {
-		lado1 = l1;
-		lado2 = l2;
-		lado3 = l3;
-		this.nlados = nlados;
+	double base, altura, lado1, lado2;
+	Poligono(double a, double b) {
+		altura = a;
+		base = b;
 	}
-	abstract void perimetro();
+	abstract double perimetro();
+	abstract double area();
 }
