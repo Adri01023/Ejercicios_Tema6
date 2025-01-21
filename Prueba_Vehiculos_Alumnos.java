@@ -14,9 +14,9 @@ public class Prueba_Vehiculos_Alumnos {
 		alumnos[2] = alumno3;
 		alumnos[3] = alumno4;
 		alumnos[4] = alumno5;
-		for (int i = 0; i < 5; i++) {
-			if (i == 4) break;
-			else System.out.println("Comparación con alumno " + (i+1) + " " + alumnos[0].esMayor(alumnos[i + 1].edad));
+		for (int i = 1; i < 5; i++) {
+			if (i == 5) break;
+			else System.out.println("Es mayor de Javier Maroto con " + alumnos[i].nombre + " " + alumnos[i].edad  + " años "+ alumnos[0].esMayor(alumnos[i].edad));
 		}
 	}
 }
